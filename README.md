@@ -18,11 +18,19 @@
 
 | 模块文件 | 模块名称 | 简要说明 |
 | :---: | :---: | :--- |
-| `ASPP.py` | ASPP | 空洞空间金字塔池化，通过不同膨胀率的空洞卷积捕获多尺度上下文信息 |
-| `DBSPPF.py` | DBSPPF | 密集连接空间金字塔池化，增强特征复用与梯度流动 |
-| `PMHSA.py` | PMHSA | 并行多头自注意力模块，用于增强全局特征建模能力 |
-| `SE_SPPF.py` | SE_SPPF | 引入 SE 通道注意力的 SPPF 模块 |
-| `SPPF_LSKA.py` | SPPF_LSKA | 结合大核可分离注意力的 SPPF 模块，在降低计算量的同时扩大感受野 |
+| `C3_Ghost.py` | C3_Ghost | 结合 GhostNet 思想的 C3 模块，极致轻量化 |
+| `C3_TR.py` | C3_TR | 引入 Transformer 结构的 C3 模块 |
+| `C3_X.py` | C3_X | 改进型 C3 模块（如 CSP 结构变体） |
+| `FasterBlock.py` | FasterBlock | 快速卷积块（如 FasterNet 结构） |
+| `FCM.py` | FCM | 特征上下文模块 (Feature Context Module) |
+| `GHBlock.py` | GHBlock | Ghost 卷积块 |
+| `LAE.py` | LAE | 局部注意力增强模块 |
+| `MSBlock.py` | MSBlock | 多尺度卷积块 |
+| `MSCAM.py` | MSCAM | 多尺度通道注意力模块 |
+| `PConv.py` | PConv | 部分卷积（Partial Convolution），降低计算冗余 |
+| `RFEM.py` | RFEM | 感受野增强模块 |
+| `SCConv.py` | SCConv | 空间与通道重建卷积 |
+| `SPDConv.py` | SPDConv | 空间到深度卷积 |
 
 ## 环境依赖
 
