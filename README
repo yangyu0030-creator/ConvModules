@@ -1,25 +1,31 @@
-# ConvModules
+<div align="center">
+  <h1>SPPModules</h1>
+  <p>🚀 基于 YOLO 的 SPP (空间金字塔池化) 模块复现与改进合集</p>
 
-这是一个深度学习卷积模块的复现与改进合集，包含多种轻量化、注意力机制与卷积变体，用于计算机视觉任务（如目标检测）。
+  <!-- 徽章 -->
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-1.10%2B-red.svg" alt="PyTorch">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+</div>
+
+---
+
+## 项目简介
+
+本项目实现了多种注意力机制与池化模块的变体，用于提升目标检测模型的性能。所有模块基于 PyTorch 编写，旨在捕获多尺度上下文信息并增强特征建模能力。
 
 ## 模块说明
 
-*   **`C3_Ghost.py`**: 结合 GhostNet 思想的 C3 模块，极致轻量化。
-*   **`C3_TR.py`**: 引入 Transformer 结构的 C3 模块。
-*   **`C3_X.py`**: 改进型 C3 模块（如 CSP 结构变体）。
-*   **`FasterBlock.py`**: 快速卷积块（如 FasterNet 结构）。
-*   **`FCM.py`**: 特征上下文模块 (Feature Context Module)。
-*   **`GHBlock.py`**: Ghost 卷积块。
-*   **`LAE.py`**: 局部注意力增强模块。
-*   **`MSBlock.py`**: 多尺度卷积块。
-*   **`MSCAM.py`**: 多尺度通道注意力模块。
-*   **`PConv.py`**: 部分卷积（Partial Convolution），降低计算冗余。
-*   **`RFEM.py`**: 感受野增强模块。
-*   **`SCConv.py`**: 空间与通道重建卷积。
-*   **`SPDConv.py`**: 空间到深度卷积。
-*   **`main.py`**: 模块测试与验证脚本。
+| 模块文件 | 模块名称 | 简要说明 |
+| :---: | :---: | :--- |
+| `ASPP.py` | ASPP | 空洞空间金字塔池化，通过不同膨胀率的空洞卷积捕获多尺度上下文信息 |
+| `DBSPPF.py` | DBSPPF | 密集连接空间金字塔池化，增强特征复用与梯度流动 |
+| `PMHSA.py` | PMHSA | 并行多头自注意力模块，用于增强全局特征建模能力 |
+| `SE_SPPF.py` | SE_SPPF | 引入 SE 通道注意力的 SPPF 模块 |
+| `SPPF_LSKA.py` | SPPF_LSKA | 结合大核可分离注意力的 SPPF 模块，在降低计算量的同时扩大感受野 |
 
 ## 环境依赖
-*   Python 3.8+
-*   PyTorch 1.10+
 
+* Python 3.8+
+* PyTorch 1.10+
+* 其他依赖请根据实际情况安装（如 `numpy`, `torchvision` 等）
