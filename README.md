@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>SPPModules</h1>
-  <p>🚀 基于 YOLO 的 SPP (空间金字塔池化) 模块复现与改进合集</p>
-
+  <h1>ConvModules</h1>
+  <p>🚀 深度学习卷积模块复现与改进合集</p>
+  
   <!-- 徽章 -->
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/PyTorch-1.10%2B-red.svg" alt="PyTorch">
@@ -12,7 +12,7 @@
 
 ## 项目简介
 
-本项目实现了多种注意力机制与池化模块的变体，用于提升目标检测模型的性能。所有模块基于 PyTorch 编写，旨在捕获多尺度上下文信息并增强特征建模能力。
+本项目收集并实现了多种轻量化、注意力机制与卷积变体模块，适用于计算机视觉任务（如目标检测、图像分类）。所有模块均基于 PyTorch 编写，方便直接集成到 YOLO 等网络架构中。
 
 ## 模块说明
 
